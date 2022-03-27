@@ -1,0 +1,28 @@
+.currentWeatherPage {
+  background-color: rgba(247, 236, 223, 0.89);
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 5px;
+  box-shadow: 15px 10px;
+  margin-left: 5%;
+  margin-top: 50px;
+  width: 90%;
+  height: 100%;
+}
+
+.weatherConditionText {
+  margin-top: 60px;
+  margin-left: 50px;
+}
+
+.weatherInfos {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.weatherInfosIcon {
+  width: 90px;
+  margin: 20px;
+}

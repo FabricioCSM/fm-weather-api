@@ -24,7 +24,7 @@ function Header (){
           <form className="col-12" style={{width: '100%',display: 'flex', flexDirection: 'row'}}>
             <input
               type="search"
-              placeholder="Insert a city name"
+              placeholder="Insert a city and/or country"
               className="form-control form-control-dark"
               onChange={handleChange}
               aria-label="Search"

@@ -1,0 +1,33 @@
+.presentationSearch {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(240, 248, 255, 0.37);
+  width: 80%;
+  height: auto;
+  margin-left: 200px;
+}
+
+.navLinks {
+  margin-top: 50px;
+}
+
+.regionInfo {
+  width: 60%;
+  padding: 30px;
+}
+
+.regionInfo .city {
+  text-align: center;
+}
+
+.regionInfo .region {
+  margin: 20px;
+}
+
+.regionInfo .country {
+  margin: 20px;
+}
+
+.regionInfo .localTime {
+  margin: 20px;
+}
