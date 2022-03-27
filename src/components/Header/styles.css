@@ -1,0 +1,22 @@
+body {
+  background-image: url("../../assets/weather.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header {
+  margin: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.optionsRadio {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+}
