@@ -18,12 +18,12 @@ function CurrentWeather(){
     return(
       <main>
         <section className="currentWeatherPage">
-          <div>
-            <WeatherImage />
-          </div>
-          <div >
+          <div className="weatherImage">
+            <WeatherImage  weather={currentWeather.current}/>
             <h3 className="weatherConditionText">{currentWeather.current.condition.text}</h3>
             <br/>
+          </div>
+          <div className="generalInfoCondition">
             <div className="weatherInfos">
               <img className="weatherInfosIcon" alt="Temperature Icon" src={Temperature}/>
               <h3>Temperature: {currentWeather.current.temp_c}°C / {currentWeather.current.temp_f}°F</h3>

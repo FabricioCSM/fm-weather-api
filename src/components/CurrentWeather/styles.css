@@ -1,3 +1,7 @@
+main {
+  
+}
+
 .currentWeatherPage {
   background-color: rgba(247, 236, 223, 0.89);
   display: flex;
@@ -6,12 +10,13 @@
   box-shadow: 15px 10px;
   margin-left: 5%;
   margin-top: 50px;
-  width: 90%;
+  max-width: 90%;
   height: 100%;
 }
 
 .weatherConditionText {
-  margin-top: 60px;
+  text-align: center;
+  margin-top: 0px;
   margin-left: 50px;
 }
 
@@ -20,6 +25,17 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+.weatherImage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.generalInfoCondition {
+  text-align: center;
+  margin: 50px;
 }
 
 .weatherInfosIcon {

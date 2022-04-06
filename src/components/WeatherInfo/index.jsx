@@ -3,35 +3,40 @@ import { Nav } from "react-bootstrap";
 import AppContext from "../../context/AppContext";
 import CountryFlag from "../CountryFlag";
 import CurrentWeather from "../CurrentWeather";
+import ForecastWeather from "../Forecast";
 import './styles.css';
 
 function WeatherInfo(){
 
   const { currentWeather } = useContext(AppContext);
-  const [navCurrent, setNavCurrent] = useState(false)
+  const [navCurrent, setNavCurrent] = useState(true)
   const [navForecast, setNavForecast] = useState(false)
   const [navHistory, setNavHistory] = useState(false)
+  const [tabNumber, setTabNumber] = useState(0)
 
   useEffect(() => {
-    console.log(navCurrent,navForecast,navHistory)
-  }, [navCurrent,navForecast,navHistory])
+    console.log(tabNumber)
+  }, [tabNumber])
 
   const handleClickCurrent = () => {
     setNavCurrent(true) 
     setNavForecast(false)
     setNavHistory(false)
+    setTabNumber(1)
   }
 
   const handleClickForecast = () => {
-    setNavForecast(true)
     setNavCurrent(false) 
-    setNavHistory(true)
+    setNavForecast(true)
+    setNavHistory(false)
+    setTabNumber(2)
   }
 
   const handleClickHistory = () => {
-    setNavHistory(true)
     setNavCurrent(false) 
     setNavForecast(false)
+    setNavHistory(true)
+    setTabNumber(3)
   }
 
     return(
@@ -59,7 +64,10 @@ function WeatherInfo(){
           </Nav>
         </nav>
 
-        {navCurrent && (<CurrentWeather />)}
+        <section>
+          {currentWeather && navCurrent && (<CurrentWeather />)}
+          {navForecast && (<ForecastWeather />)}
+        </section>
       </main>
     )
 }

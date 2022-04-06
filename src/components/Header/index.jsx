@@ -5,7 +5,7 @@ import './styles.css';
 function Header (){
 
   const [citySearch, setCitySearch] = useState('')
-  const { currentWeatherSearch } = useContext(AppContext);
+  const { currentWeatherSearch, forecastWeatherSearch } = useContext(AppContext);
 
   const handleChange = ({target}) => {
     setCitySearch(target.value)
@@ -14,6 +14,8 @@ function Header (){
   const handleSearch = (event) => {
     event.preventDefault();
     currentWeatherSearch(citySearch);
+    forecastWeatherSearch(citySearch);
+    console.log(citySearch, 'index')
   }
 
 
