@@ -15,7 +15,6 @@ function Header (){
     event.preventDefault();
     currentWeatherSearch(citySearch);
     forecastWeatherSearch(citySearch);
-    console.log(citySearch, 'index')
   }
 
 

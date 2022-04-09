@@ -32,12 +32,33 @@
 .vl {
   border-left: 6px solid rgb(28, 29, 28);
   margin-left: 20px;
-  margin-top: 120px;
+  margin-top: 0px;
   height: 500px;
 }
 
+.astroIcons {
+  padding-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.astroIcons .image {
+  width: 90px;
+}
+
+.weatherInfosIcon {
+  width: 40px;
+}
+
+.weatherInfoData {
+  font-size: 20px;
+}
+
 .weatherImageForecast {
-  margin-top: 0;
+  margin-top: -50px;
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -16,6 +16,7 @@ const [imageType, setImageType] = useState();
 const [weatherImage, setWeatherImage] = useState()
 
 useEffect(() => {
+  console.log(weather)
   if(weather) {
     setImageType(weather.condition.code)
   }
@@ -23,10 +24,10 @@ useEffect(() => {
 }, [imageType, weather])
 
 const handleImage = (imageType) => {
-  if(+imageType === 1000 && weather.current.is_day === 1) return setWeatherImage(SunnyIcon);
-  if(+imageType === 1000 && weather.current.is_day === 0) return setWeatherImage(ClearNightIcon);
-  if(+imageType === 1003 && weather.current.is_day === 1) return setWeatherImage(CloudySunIcon);
-  if(+imageType === 1003 && weather.current.is_day === 0) return setWeatherImage(CloudyNightIcon);
+  if(+imageType === 1000 && weather.is_day === 1) return setWeatherImage(SunnyIcon);
+  if(+imageType === 1000 && weather.is_day === 0) return setWeatherImage(ClearNightIcon);
+  if(+imageType === 1003 && weather.is_day === 1) return setWeatherImage(CloudySunIcon);
+  if(+imageType === 1003 && weather.is_day === 0) return setWeatherImage(CloudyNightIcon);
   if(+imageType === 1006 || +imageType === 1030 || +imageType === 1035 || +imageType === 1047) return setWeatherImage(CloudyIcon);
   if(+imageType === 1009) return setWeatherImage(ToRainIcon);
   if(+imageType === 1087) return setWeatherImage(RainThunder);
