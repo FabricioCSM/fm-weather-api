@@ -11,6 +11,10 @@
   margin-top: 50px;
 }
 
+.navTab:hover { 
+  background-color: rgba(0, 0, 255, 0.315);
+};
+
 .regionInfo {
   width: 60%;
   padding: 30px;
@@ -31,3 +35,17 @@
 .regionInfo .localTime {
   margin: 20px;
 }
+
+.presentationSearch {
+  max-width: 90%;
+}
+
+.regionInfo {
+  width: 100%;
+  text-align: justify;
+}
+
+.regionInfo.city {
+  margin: 5px;
+}
+

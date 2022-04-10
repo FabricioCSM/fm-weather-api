@@ -16,11 +16,12 @@
   background-color: rgba(253, 253, 253, 0.89);
   box-shadow: 15px 10px;
   max-width: 100%;
+  height: 47%;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  height: auto;
-  margin: 5% 4.15%;
+  justify-content: space-between;
+  margin: 3% 4.15%;
+  border-radius: 20px;
 }
 
 .cardsInfos {
@@ -51,6 +52,7 @@
 
 .weatherInfosIcon {
   width: 40px;
+  margin-right: 5px;
 }
 
 .weatherInfoData {
@@ -62,5 +64,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 10%;
+  max-width: 10%;
+  height: max-content;
+  border-radius: 10px;
 }

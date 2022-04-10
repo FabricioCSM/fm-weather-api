@@ -1,5 +1,5 @@
 .weatherIcon {
   width: 450px;
-  height: auto;
+  height: max-content;;
   margin: 50px
 }
