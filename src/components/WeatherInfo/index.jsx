@@ -44,7 +44,7 @@ function WeatherInfo(){
         <section className="presentationSearch">
           <CountryFlag country={currentWeather ? currentWeather.location.country : null}/>
           {currentWeather && (<div className="regionInfo">
-            <h2 className="city">City: {currentWeather ? currentWeather.location.name : null}</h2>
+            <h2 style={{margin: '15px', textAlign: 'center', fontSize: '45px'}} >{currentWeather ? currentWeather.location.name : null}</h2>
             <h3 className="region">Region: {currentWeather ? currentWeather.location.region : null}</h3>
             <h3 className="country">Country: {currentWeather ? currentWeather.location.country : null}</h3>
             <h3 className="localTime">Local Time: {currentWeather ? currentWeather.location.localtime : null}</h3>
@@ -52,14 +52,14 @@ function WeatherInfo(){
         </section>
         <nav className="navLinks">
           <Nav justify variant="tabs">
-            <Nav.Item>
-              <Nav.Link eventKey="link-0" onClick={handleClickCurrent}>Current Weather</Nav.Link>
+            <Nav.Item className="navTab">
+              <Nav.Link  eventKey="link-0" onClick={handleClickCurrent}>Current Weather</Nav.Link>
             </Nav.Item>
-            <Nav.Item>
+            <Nav.Item className="navTab">
               <Nav.Link eventKey="link-1" onClick={handleClickForecast}>Forecast 3 Days</Nav.Link>
             </Nav.Item>
-            <Nav.Item>
-              <Nav.Link eventKey="link-2" onClick={handleClickHistory}>Astronomy</Nav.Link>
+            <Nav.Item className="navTab">
+              <Nav.Link  className="tab" eventKey="link-2" onClick={handleClickHistory}>Favorites</Nav.Link>
             </Nav.Item>
           </Nav>
         </nav>

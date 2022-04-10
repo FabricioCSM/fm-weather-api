@@ -16,7 +16,6 @@ function ForecastWeather() {
   return(
     <main>
       <section className="currentWeatherPageForecast">
-        <h2>Forecast Tab</h2>
         <section className="cardsInfos">
           {forecastWeather && forecastWeather.forecast.forecastday.map((weatherDay, index) => {
             console.log(weatherDay)
@@ -41,11 +40,7 @@ function ForecastWeather() {
                     <div className="weatherInfos">
                       <img className="weatherInfosIcon" alt="Temperature Icon" src={Temperature}/>
                       <h3 className="weatherInfoData">Max Temperature: {weatherDay.day.maxtemp_c}°C / {weatherDay.day.maxtemp_f}°F</h3>
-                      <h3 className="weatherInfoData">Max Temperature: {weatherDay.day.mintemp_c}°C / {weatherDay.day.mintemp_f}°F</h3>
-                    </div>
-                    <div className="weatherInfos">
-                      <img className="weatherInfosIcon" alt="Termic Sensation Icon" src={TermicSensation}/>
-                      <h3 className="weatherInfoData">Thermal sensation: {weatherDay.day.feelslike_c}°C / {weatherDay.day.feelslike_f}°F</h3>
+                      <h3 className="weatherInfoData">Min Temperature: {weatherDay.day.mintemp_c}°C / {weatherDay.day.mintemp_f}°F</h3>
                     </div>
                     <div className="weatherInfos">
                       <img className="weatherInfosIcon" alt="Humidity" src={Humidity}/>

@@ -26,7 +26,7 @@ function CurrentWeather(){
           <div className="generalInfoCondition">
             <div className="weatherInfos">
               <img className="weatherInfosIcon" alt="Temperature Icon" src={Temperature}/>
-              <h3>Temperature: {currentWeather.current.temp_c}°C / {currentWeather.current.temp_f}°F</h3>
+              <h3>Average Temperature: {currentWeather.current.temp_c}°C / {currentWeather.current.temp_f}°F</h3>
             </div>
             <div className="weatherInfos">
               <img className="weatherInfosIcon" alt="Termic Sensation Icon" src={TermicSensation}/>
