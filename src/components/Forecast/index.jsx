@@ -1,7 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import AppContext from "../../context/AppContext";
 import Temperature from '../../assets/temperatureIcon.png';
-import TermicSensation from '../../assets/termicSensation.jpg';
 import Precipitation from '../../assets/precipitation.png';
 import Humidity from '../../assets/humidityIcon.jpg';
 import Sunrise from '../../assets/sunrise.png'
