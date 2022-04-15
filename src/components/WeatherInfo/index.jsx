@@ -3,6 +3,7 @@ import { Nav } from "react-bootstrap";
 import AppContext from "../../context/AppContext";
 import CountryFlag from "../CountryFlag";
 import CurrentWeather from "../CurrentWeather";
+import Favorites from "../Favorite";
 import ForecastWeather from "../Forecast";
 import './styles.css';
 
@@ -49,6 +50,7 @@ function WeatherInfo(){
             <h3 className="country">Country: {currentWeather ? currentWeather.location.country : null}</h3>
             <h3 className="localTime">Local Time: {currentWeather ? currentWeather.location.localtime : null}</h3>
           </div>)}
+          {currentWeather && <Favorites />}
         </section>
         <nav className="navLinks">
           <Nav justify variant="tabs">

@@ -8,6 +8,7 @@ function Provider({children}) {
 
   const [currentWeather, setCurrentWeather] = useState();
   const [forecastWeather, setForecastWeather] = useState();
+  const [favorites, setFavorites] = useState(false)
 
   async function currentWeatherSearch(city){
     const data = await getCurrentWeather(city);
@@ -26,6 +27,8 @@ function Provider({children}) {
     currentWeather,
     forecastWeatherSearch,
     forecastWeather,
+    setFavorites,
+    favorites,
   }
 
   return (
